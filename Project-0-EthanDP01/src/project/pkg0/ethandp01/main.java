@@ -7,20 +7,20 @@ public class main {
 
     public static void main(String[] args) {
         
-     
+    //Introduction
     System.out.println("Welcome to the beta for the party creator! In this small prototype you will pick and choose 4 party member to make a team for an adventure! "
                        + "Before we get started, Let us get you registered!");
     
     System.out.println();
         
-    
+    //Setting username for an account
     Scanner username = new Scanner(System.in);
     System.out.println("Please insert your desired username!");
     String user = username.next();
     
     System.out.println();
     
-    
+    //setting a password for the account
     Scanner password = new Scanner(System.in);
     System.out.println("Please create a password for this user.");
     String pass = password.next();
@@ -28,7 +28,7 @@ public class main {
     System.out.println();
     
     
-    
+    //Creating character objects so they may be displayed and used 
     System.out.println("Below lists the characters that you may choose from! Remember you may only choose 4!");
     
     System.out.println();
@@ -75,7 +75,7 @@ public class main {
     
     System.out.println();
     
-    
+    //Allowing the user to make their choices
     System.out.println("Selct the 4 you would like to acquire, use numbers 1 through 10 for your selections as shown alongside the characters!");
     
     System.out.println();
@@ -216,6 +216,7 @@ public class main {
     
     int counterOptions = 0;
     
+    //Allowing the user to review their choices or end the program
     do{
     
     System.out.println("Anything else before you go?");
