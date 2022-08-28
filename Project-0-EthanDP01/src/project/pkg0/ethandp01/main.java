@@ -7,6 +7,17 @@ public class main {
 
     public static void main(String[] args) {
         
+        String dbUrl = "jdbc:postgresql://database-1.cbyo84mh13gj.us-east-2.rds.amazonaws.com:5432/postgres?currentSchema=Projectzero";
+        String dbUsername = "fake";
+        String dbPassword = "fake";
+        try {
+            Class.forName("org.postgresql.Driver");
+            DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
+            System.out.println("Connection established");
+        } catch (Exception e) {
+            System.err.println("Connection could not be established");
+        }
+        
     //Introduction
     System.out.println("Welcome to the beta for the party creator! In this small prototype you will pick and choose 4 party member to make a team for an adventure! "
                        + "Before we get started, Let us get you registered!");
